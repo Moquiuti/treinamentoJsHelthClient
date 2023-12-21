@@ -1,6 +1,5 @@
 const texto1 = "Olá, mundo!";
 const texto2 = 'Olá, mundo!';
-const senha = "senhaSuperSegura456!";
 const StringDeNumeros = "34567";
 
 const citacao = "Meu nome é ";
@@ -20,4 +19,14 @@ console.log(hiragana)
 
 console.log(citacao + meuNome)
 
-//template string OU template literal
+const cidade = "belo horizonte";
+const input = "Belo Horizonte";
+
+console.log(cidade === input); // false
+//o JavaScript diferencia minúsculas e maiúsculas, tanto nos valores dos dados quanto no código que escrevemos.
+const inputMinusculo = input.toLowerCase();
+
+console.log(cidade === inputMinusculo); // true
+
+const senha = "minhaSenha123"
+console.log(senha.length) // 13 caracteres
