@@ -45,4 +45,10 @@ console.log(nomeIdade("Leandro dos Santos Moquiuti", calculoAnos(1989, 2023)))
 function calculoAnos(nascimento, anoAtual) {
     return anoAtual - nascimento;
 }
+
+function comParametro(param) {
+    console.log(param)
+}
+comParametro()
+
   
