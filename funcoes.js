@@ -46,9 +46,5 @@ function calculoAnos(nascimento, anoAtual) {
     return anoAtual - nascimento;
 }
 
-function comParametro(param) {
-    console.log(param)
-}
-comParametro()
 
   
