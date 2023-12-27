@@ -5,7 +5,7 @@ const getRandomArbitrary = (min, max) => {
     console.log("Valor Gerado: " + resultado);
     return resultado;
 };
-const impressao = function(texto){console.log(texto)};
+const impressao =(texto) => console.log(texto);
 const soma = (num1, num2) => num1 + num2;
 impressao('Resultado da Soma é: ' + soma(getRandomArbitrary(1,10),getRandomArbitrary(11,20)))
 const subtracao = (num1, num2) => num1 - num2;
