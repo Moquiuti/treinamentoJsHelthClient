@@ -17,7 +17,7 @@ function multiplicacao(primeiroNumero, segundoNumero) {
 imprimeTexto(divisao(getRandomArbitrary(30, 80), getRandomArbitrary(1, 20)));
 
 function divisao(primeiroNumero, segundoNumero) {
-    return primeiroNumero / segundoNumero;
+    return Math.round(primeiroNumero / segundoNumero);
 }
 
 imprimeTexto(subtracao(getRandomArbitrary(30, 80), getRandomArbitrary(1, 20)));
