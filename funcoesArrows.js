@@ -17,6 +17,3 @@ impressao('Resultado da Divisão arrendodado é: ' + divisao(getRandomArbitrary(
 const calculoAnos = (nascimento, anoAtual) => anoAtual - nascimento;
 const apresentacao = (nome, idade) => impressao(`my name is ${nome} and I have ${idade} years old`);
 apresentacao("Leandro dos Santos Moquiuti Ferreira", calculoAnos(1989, 2023));
-
-
-  
