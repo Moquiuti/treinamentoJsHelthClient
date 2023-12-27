@@ -35,3 +35,14 @@ function getRandomArbitrary(min, max) {
     return resultado;
 }
   
+
+function nomeIdade(nome, idade) {
+    return `my name is ${nome} and I have ${idade} years old`
+  }
+  
+console.log(nomeIdade("Leandro dos Santos Moquiuti", calculoAnos(1989, 2023)))
+
+function calculoAnos(nascimento, anoAtual) {
+    return anoAtual - nascimento;
+}
+  
