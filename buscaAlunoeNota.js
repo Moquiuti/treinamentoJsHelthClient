@@ -24,6 +24,7 @@ const exibeNomeENota = (aluno) => {
     }
 };
 
+/**For Tradicional */
 const exibeMediadaTurma = () => { 
     let somaDasNotas = 0
     const qtdDeAlunos = medias.length;
@@ -34,6 +35,7 @@ const exibeMediadaTurma = () => {
     console.log(`A média das notas é ${media}!`)
 }
 
+/**For Of */
 const exibeMediadaTurmaOf = () => { 
     let somaDasNotas = 0
 
@@ -44,6 +46,18 @@ const exibeMediadaTurmaOf = () => {
     console.log(`A média das notas é ${media}!`)
 }
 
+/**forEach */
+const exibeMediadaTurmaForEach = () => { 
+    let somaDasNotas = 0
+
+    medias.forEach(element => {
+        somaDasNotas += element;
+    });
+    const media = somaDasNotas / medias.length;
+    console.log(`A média das notas é ${media}!`)
+}
+
 exibeNomeENota("Davi");
 exibeMediadaTurma();
 exibeMediadaTurmaOf();
+exibeMediadaTurmaForEach();
