@@ -22,3 +22,9 @@ client.height = "1.76"
 chaves.forEach((chave) => {
     console.log(`The key ${chave} has value ${client[chave]}`);
 });
+/**
+ * Removendo uma propriedade
+ */
+delete client.height
+
+console.log(client.height) //undefined
