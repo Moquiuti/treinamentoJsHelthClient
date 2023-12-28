@@ -4,7 +4,16 @@ const client = {
     age: 34,
     cpf: "10293847561",
     email: "leandro@dominio.com",
-    telefone: ["+55 (67) 9 9999-9999", "+55 (67) 9 8888-7777"]
+    telefone: ["+55 (67) 9 9999-9999", "+55 (67) 9 8888-7777"],
+    saldo: 200,
+    efetuaPagamento: function (valor) {
+        if (valor > this.saldo) {
+            console.log("Saldo insuficiente");
+        } else {
+            this.saldo -= valor;
+            console.log(`Pagamento realizado. Novo saldo: ${this.saldo}`);
+        }
+    },
 };
 
 console.log(
@@ -81,3 +90,9 @@ const listaApenasApartamentos = client.address.filter(
 );
 
 console.log(listaApenasApartamentos);
+
+/**
+ * Testando a criação de funções dentro objeto e utilizando a mesma
+ */
+client.efetuaPagamento(250);
+client.efetuaPagamento(25);
