@@ -24,4 +24,15 @@ const exibeNomeENota = (aluno) => {
     }
 };
 
+const exibeMediadaTurma = () => { 
+    let somaDasNotas = 0
+    const qtdDeAlunos = medias.length;
+    for(let i = 0; i < qtdDeAlunos; i++) {
+        somaDasNotas += medias[i];
+    }
+    const media = somaDasNotas / qtdDeAlunos;
+    console.log(`A média das notas é ${media}!`)
+}
+
 exibeNomeENota("Davi");
+exibeMediadaTurma();
