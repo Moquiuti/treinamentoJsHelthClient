@@ -16,5 +16,11 @@ const notas = [getRandomArbitrary(0,10), getRandomArbitrary(0,10), getRandomArbi
 const notasAtualizadas = notas.map((nota) => {
   return nota + 1 >= 10 ? 10 : nota + 1;
 });
+
+const nomes = ["ana Julia", "Caio vinicius", "BIA silva"];
+
+const nomesPadronizados = nomes.map((nome) => nome.toUpperCase());
+
+console.log(nomesPadronizados);
 console.log(notas);
 console.log(notasAtualizadas);
