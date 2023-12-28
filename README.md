@@ -52,3 +52,12 @@
 * O for é constituído de três expressões: criação da variável de controle; condição de execução; modificação da variável de controle. * * Essas três expressões juntas definem quantas vezes o bloco do for será executado.
 * Utilizar a estrutura for of e entender a diferença em relação ao for:
 * O for of sempre é utilizado para percorrer todos os elementos de um array, do início ao fim. Para esses casos, o for of é mais conciso que o for.
+
+>---
+
+* Como utilizar o forEach:
+* Aprendemos mais uma forma de iterar sobre arrays, dessa vez com um método próprio deles. O forEach recebe uma função callback que será executada para cada item do array.
+* Diferentes formas de utilizar funções callback:
+* Podemos utilizar funções anônimas (como arrow functions) diretamente como funções callback, ou então criar funções de forma externa e utilizá-las no parâmetro.
+* Como utilizar o map:
+* O map também aceita funções callback, assim como o forEach, e é adequado para quando queremos "reescrever" os valores de um array, sem modificar o array original. Um novo array é criado com os valores reescritos.

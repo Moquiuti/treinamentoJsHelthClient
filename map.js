@@ -21,6 +21,13 @@ const nomes = ["ana Julia", "Caio vinicius", "BIA silva"];
 
 const nomesPadronizados = nomes.map((nome) => nome.toUpperCase());
 
+/**
+ * A diferença entre map e foreach é que... 
+ * map retorna um novo array com os elementos transformados por uma função, enquanto 
+ * foreach não retorna nada e apenas executa uma ação para cada elemento. 
+ * map é usado para transformar uma coleção de elementos, enquanto 
+ * foreach é usado para aplicar uma operação com efeitos em cada elemento.
+ */
 console.log(nomesPadronizados);
 console.log(notas);
 console.log(notasAtualizadas);
