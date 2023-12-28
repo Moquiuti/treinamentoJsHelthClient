@@ -34,5 +34,16 @@ const exibeMediadaTurma = () => {
     console.log(`A média das notas é ${media}!`)
 }
 
+const exibeMediadaTurmaOf = () => { 
+    let somaDasNotas = 0
+
+    for(let element of medias) {
+        somaDasNotas += element;
+    }
+    const media = somaDasNotas / medias.length;
+    console.log(`A média das notas é ${media}!`)
+}
+
 exibeNomeENota("Davi");
 exibeMediadaTurma();
+exibeMediadaTurmaOf();
