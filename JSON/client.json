@@ -1,0 +1,14 @@
+{
+    "nome": "Leandro",
+    "email": "leandro.moquiuti@firma.com",
+    "telefone": [
+        "+55 (67) 9 9999-9999",
+        "+55 (67) 9 8888-7777"
+    ],
+    "endereco": {
+        "rua": "R. Joseph Climber",
+        "numero": 202,
+        "apartamento": true,
+        "complemento": "ap 934"
+    }
+}
