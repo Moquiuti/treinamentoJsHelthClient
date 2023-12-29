@@ -42,9 +42,25 @@ const client = {
     ],
 };
 
+/**
+ * Ferramentas que podemos usar para verificar as chaves, campos e valores de um objeto.
+ */
 for (let chave in client) {
     let tipo = typeof client[chave];
     if (tipo !== "object" && tipo !== "function") {
         console.log(`A chave ${chave} tem o valor ${client[chave]}`);
     }
+}
+
+/**
+ * Outras ferramentas que podemos usar para verificar as chaves, campos e valores de um objeto.
+ */
+const chavesDoObjeto = Object.keys(client);
+console.log(chavesDoObjeto);
+
+/**
+ * Verificando se a chave endereços possuí valores, caso contrário será printado um erro, dizendo ser obrigatório possuir um endereço.
+ */
+if (!chavesDoObjeto.includes("address")) {
+    console.error("Erro. É necessário ter um endereço cadastrado.");
 }
