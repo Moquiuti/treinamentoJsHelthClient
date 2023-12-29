@@ -90,9 +90,25 @@ const encomenda = {
     ////rua: client.address[0].street,
     ///numero: client.address[1].number,
 
-    /**sintaxe de espalhamento em objetos */
+    /**sintaxe de espalhamento em objetos com spread operator */
     ...client.address[0],
 
 };
 
 console.log(encomenda);
+
+/**
+ * Brincando com spread operator unindo dois objetos distintos em um novo
+ */
+const fichaGuerreiro = {
+    nome: "Aragorn",
+    classe: "guerreiro"
+}
+
+const equipoGuerreiro = {
+    espada: "Andúril",
+    capa: "capa élfica +2"
+}
+
+const guerreiro = { ...fichaGuerreiro, ...equipoGuerreiro }
+console.log(guerreiro)
