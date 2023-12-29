@@ -90,3 +90,10 @@
 * Que para extrair chaves e valores de objetos é possível utilizar métodos de Object;
 * Que funções como .entries, .key e .value podem ser úteis na hora de trabalhar com objetos;
 * Que o spread operator (ou sintaxe de espalhamento) pode ser uma opção para decompor objetos quando precisamos extraí-los de um array e formar um novo array.
+
+>---
+
+* O que é o formato JSON e por qual motivo o utilizamos, como por exemplo a transmissão de dados ou armazenamento de configurações;
+* Qual a sintaxe do JSON e suas limitações, como não ter variáveis ou comentários;
+* Como ler um arquivo .json no Node.js;
+* Como utilizar as funções nativas do Node.js para manipular um JSON.
