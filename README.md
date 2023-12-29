@@ -97,3 +97,9 @@
 * Qual a sintaxe do JSON e suas limitações, como não ter variáveis ou comentários;
 * Como ler um arquivo .json no Node.js;
 * Como utilizar as funções nativas do Node.js para manipular um JSON.
+
+>---
+
+* Que podemos utilizar os métodos de listas em conjunto com objetos;
+* Como passamos os parâmetros e propriedades dos objetos para alguns métodos de listas;
+* Vimos exemplos de como encontrar, filtrar e ordenar uma lista de objetos.
