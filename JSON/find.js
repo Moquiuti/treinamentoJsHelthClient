@@ -21,8 +21,31 @@ const filtrarApartamentoSemComplemento = (clientes) => {
         );
     });
 }
+/**
+ * Ordenação
+ * @param {*} lista 
+ * @param {*} propriedade 
+ * @returns 
+ */
+const listaOrdenada = (lista, propriedade) => {
+    const resultado = lista.sort((a, b) => {
+        if (a[propriedade] < b[propriedade]) {
+            return -1;
+        }
+        if (a[propriedade] > b[propriedade]) {
+            return 1;
+        }
+        return 0;
+    });
+
+    return resultado;
+}
 
 //console.log(result(clients, "nome", "Kirby"));
 //console.log(result(clients, "telefone", "1918820860"));
-console.log(filtrarApartamentoSemComplemento(clients));
-
+//console.log(filtrarApartamentoSemComplemento(clients));
+//console.log(listaOrdenada(clients, "nome"));
+/**
+ * Caso eu queira a lista reversa, basta usar a função reverse()
+ */
+console.log(listaOrdenada(clients, "nome").reverse());
