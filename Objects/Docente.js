@@ -10,9 +10,4 @@ class Docente extends User {
     }
 }
 
-const newDocente = new Docente('Leandro', 'leandro.moquiuti@fmail.com', '21-04-1989');
-console.log(newDocente)
-console.log(newDocente.exibirInfos());
-console.log(newDocente.aprovaEstudante('Davi', 'English'));
-
 

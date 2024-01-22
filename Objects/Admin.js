@@ -10,8 +10,3 @@ class Admin extends User {
     }
 }
 
-const newAdmin = new Admin('Leandro', 'leandro.moquiuti@fmail.com', '21-04-1989');
-console.log(newAdmin);
-console.log(newAdmin.exibirInfos());
-console.log(newAdmin.criarCurso('Curso de js', 20));
-
