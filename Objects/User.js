@@ -1,4 +1,4 @@
-class User {
+export default class User {
     constructor(nome, email, nascimento, role, ativo = true) {
         this.nome = nome;
         this.email = email;
@@ -13,3 +13,4 @@ class User {
 
 const newUser = new User('Leandro', 'leandro.moquiuti@fmail.com', '21-04-1989', null);
 console.log(newUser);
+console.log(newUser.exibirInfos());
