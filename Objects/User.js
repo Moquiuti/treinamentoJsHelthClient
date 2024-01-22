@@ -4,6 +4,7 @@ export default class User {
     #nascimento
     #role
     #ativo
+
     constructor(nome, email, nascimento, role, ativo = true) {
         this.#nome = nome;
         this.#email = email;
@@ -11,7 +12,19 @@ export default class User {
         this.#role = role || 'estudante';
         this.#ativo = ativo;
     }
+
+    #montObject() {
+        return ({
+            nome: this.#nome,
+            email: this.#email,
+            nascimento: this.#nascimento,
+            role: this.#role,
+            ativo: this.#ativo,
+        });
+    }
+
     exibirInfos() {
-        return `${this.#nome}, ${this.#email}`
+        const objUser = this.#montObject();
+        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`
     }
 }
