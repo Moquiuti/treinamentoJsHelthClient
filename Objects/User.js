@@ -33,8 +33,18 @@ export default class User {
         return this.#ativo
     }
 
+    set nome(nome) {
+        if (nome === '') {
+            throw new Error('Formato não válido');
+        }
+        this.#nome = nome;
+    }
+    set email(email) { this.#email = email; }
+    set nascimento(nascimento) { this.#nascimento = nascimento; }
+    set role(role) { this.#role = role; }
+    set ativo(ativo) { this.#ativo = ativo; }
+
     exibirInfos() {
-        const objUser = this.#montObject();
-        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`
+        return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
     }
 }
