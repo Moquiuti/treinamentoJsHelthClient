@@ -123,3 +123,8 @@
 * O conceito de encapsulamento, que é a ação (ou ações) de “esconder” atributos de uma classe, para evitar acesso indevido a atributos importantes ou dados sensíveis, ou que métodos sejam utilizados de forma errada;
 * Como utilizar a sintaxe de atributos privados do JavaScript, através do prefixo #, para que a própria linguagem de programação faça a “segurança” da classe, impedindo o acesso externo a propriedades e métodos assinalados como privados com este prefixo;
 * A criar métodos assessors para “expôr” e permitir acesso e modificação de propriedades de forma controlada e restrita, através do uso das funções get para retornar dados específicos e set para definir dados específicos
+
+>---
+
+* Que chamamos de polimorfismo a alteração de um método de uma classe para que, na subclasse, o método tenha a mesma assinatura porém um comportamento diferente do método executado no contexto da superclasse;
+* Que existe uma série de princípios de design de código pensados para a programação orientada a objetos, que estão compilados no acrônimo SOLID.
